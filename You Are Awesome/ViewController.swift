@@ -19,7 +19,18 @@ class ViewController: UIViewController {
     @IBAction func messageButtonPressed(_ sender: UIButton) {
         print("Button was pressed 😎") //emoji:control+command+space
         messageLabel.text="You Are Awesome!"
+        messageLabel.textColor=UIColor.red
+        messageLabel.textAlignment = .left
+        
     }
+    
+    @IBAction func anotherButtonPressed(_ sender: UIButton) {
+        print("Another Message🤩")
+        messageLabel.text="You Are Great!"
+        messageLabel.textColor = .systemBlue
+        messageLabel.textAlignment = .right
+    }
+    
     
 }
 
